@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="#" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>红星美凯龙-大设天下</title>
+    <style type="text/css">
+        body{
+            background-image: url(images/tel-bg1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            margin: 0;
+            padding: 0;
+            vertical-align: bottom;/*消除图片的间隔让图片下对齐*/
+        }
+
+        .main {
+            margin-top: 96%;
+            /* background: red; */
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            /* height: 212px; */
+            position: relative;
+        }
+
+        .div1, .div2 {
+            /* background-color: green; */
+            padding: 20px 0 10px 0;
+            /* border: solid; */
+            border-bottom-style: solid;
+            border-bottom-color: gray;
+        }
+        form input {
+            line-height: 30px;
+            font-size: 20px;
+            background: transparent;
+            border: none;
+            color: white;
+            width:70%;
+        }
+        .div3 {
+            border-bottom-style: solid;
+            color: gray;
+            height: 50px;
+            padding: 5px 0;
+        }
+        .div3 input {
+            width: 48%;
+            height: inherit;
+        }
+        #submit {
+            width: 100%;
+            margin-top: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            color: blue;
+            background-image: url(images/tj-btn.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            line-height: 60px;
+        }
+
+
+        #yanzheng {
+            color: red;
+            background-image: url(images/yzm-bg.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            float: right;
+        }
+
+
+    </style>
+</head>
+<div class="main">
+
+        <form class="input-form" actions="#" method="post">
+            <div class="div1">
+        <img src="images/name-icon.png" alt="usernameicon"/>
+        <input class="username" name="username" type="text" placeholder="请输入用户名"/>
+            </div>
+            <div class="div2">
+        <img src="images/tel-icon.png"/>
+        <input name="password" type="password" placeholder="请输入密码"/>
+            </div>
+            <div class="div3">
+        <input class="code" name="code" type="text" placeholder="请输入验证码"/>
+        <input id="yanzheng" type="button" value="获取验证码"/>
+            </div>
+        <input id="submit" name="submit" type="button" value="点击提交"/>
+        </form>
+
+</div>
+
+</html>
