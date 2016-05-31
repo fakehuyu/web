@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link href="#" rel="stylesheet" type="text/css">
+    <!--<link href="#" rel="stylesheet" type="text/css">-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <title>红星美凯龙-大设天下</title>
@@ -11,56 +11,67 @@
             background-image: url(images/tel-bg1.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            margin: 0;
-            padding: 0;
         }
+        body,html,div,form{
+            margin:0;
+            padding:0;
+            height:100%;
+            width:100%;
+            position: relative;
+        }
+        /*input,img{*/
+            /*margin:0;*/
+            /*padding:0;*/
+            /*height:100%;*/
+            /*width:100%;*/
+            /*position: relative;*/
+        /*}*/
+
         img {
-            margin: 0;
-            padding: 0;
             vertical-align: bottom;/*消除图片的间隔让图片下对齐*/
         }
 
         .main {
-            margin-top: 96%;
+            top: 52%;
             /* background: red; */
             width: 80%;
+            height: 40%;
             margin-left: 10%;
             margin-right: 10%;
             /* height: 212px; */
             position: relative;
         }
 
-        .div1, .div2 {
+        .div1, .div2,.div3 {
             /* background-color: green; */
-            padding: 20px 0 10px 0;
+            padding: 20px 0 0 0;
             /* border: solid; */
             border-bottom-style: solid;
             border-bottom-color: gray;
+            height:15%;
         }
         form input {
             line-height: 30px;
             font-size: 20px;
+            margin:0 0 0 0;
+            padding: 0;
             background: transparent;
             border: none;
             color: white;
             width:70%;
         }
-        .div3 {
-            border-bottom-style: solid;
-            color: gray;
-            height: 50px;
-            padding: 5px 0;
-        }
-        .div3 input {
-            width: 48%;
-            height: inherit;
-        }
+        /*form{*/
+            /*width: 100%;*/
+            /*background-color: pink;*/
+        /*}*/
+
         #submit {
             width: 100%;
-            margin-top: 10px;
+            /*height:25%;*/
+            margin-top: 15px;
             font-size: 30px;
             font-weight: bold;
-            color: blue;
+            color: darkblue;
             background-image: url(images/tj-btn.png);
             background-repeat: no-repeat;
             background-size: 100% 100%;
@@ -69,34 +80,42 @@
 
 
         #yanzheng {
-            color: red;
+            color: darkblue;
             background-image: url(images/yzm-bg.png);
             background-repeat: no-repeat;
             background-size: 100% 100%;
-            float: right;
+            height:80%;
+            width: 45%;
+            position: absolute;
+            top: 10%;
+            right: 0;
         }
-
+        .yzm {
+            margin-bottom:10px;
+            width: 50%;
+        }
 
     </style>
 </head>
-<div class="main">
+
+    <div class="main">
 
         <form class="input-form" actions="#" method="post">
             <div class="div1">
-        <img src="images/name-icon.png" alt="usernameicon"/>
+        <img src="images/name-icon.png" alt="usernameicon" height="28" width="28">
         <input class="username" name="username" type="text" placeholder="请输入用户名"/>
             </div>
             <div class="div2">
-        <img src="images/tel-icon.png"/>
+        <img src="images/tel-icon.png" height="28" width="28">
         <input name="password" type="password" placeholder="请输入密码"/>
             </div>
             <div class="div3">
-        <input class="code" name="code" type="text" placeholder="请输入验证码"/>
+        <input class="yzm" name="code" type="text" placeholder="请输入验证码"/>
         <input id="yanzheng" type="button" value="获取验证码"/>
             </div>
         <input id="submit" name="submit" type="button" value="点击提交"/>
         </form>
 
-</div>
+    </div>
 
 </html>
